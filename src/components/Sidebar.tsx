@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen }: Props) => {
 
   return (
     <aside
-      className={`scroll sticky right-0 top-0 h-full max-h-screen overflow-y-scroll pt-20 shadow-lg transition-transform duration-200 sm:pt-0 ${
+      className={`scroll fixed right-0 top-0 h-full max-h-screen w-full overflow-y-scroll bg-white pt-20 shadow-lg transition-transform duration-200 ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >

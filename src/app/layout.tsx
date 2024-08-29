@@ -18,11 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-neutral-950`}>
-        <main className="mx-auto my-0 h-screen max-h-screen w-full border-slate-800 sm:my-6 sm:h-[700px] sm:max-w-[380px] sm:border">
-          <div className="w-full overflow-hidden bg-white">
+      <body className={`${inter.className}`}>
+        <main className="mx-auto h-screen max-h-screen w-full max-w-screen-xl bg-white">
+          <header>
             <Navbar />
-          </div>
+          </header>
           <div>{children}</div>
         </main>
       </body>

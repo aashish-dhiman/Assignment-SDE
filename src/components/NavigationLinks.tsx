@@ -14,7 +14,7 @@ const NavigationLinks = ({
   toggleSection,
 }: Props) => {
   return (
-    <div className="divide-y-[1px]">
+    <div className="">
       {sidebarConfig?.map((section, sectionIndex) => (
         <React.Fragment key={sectionIndex}>
           {/* HEADING LEVEL 1: Collapsible Section */}
@@ -27,7 +27,7 @@ const NavigationLinks = ({
 
           {/* Render items if the section is open */}
           {openSections[section.id] && (
-            <div className="divide-y-[1px] divide-gray-300">
+            <div className="">
               {section?.items?.map((item, itemIndex) => (
                 <div key={itemIndex}>
                   {"items" in item && item?.items ? (
