@@ -10,32 +10,32 @@ export const marketConfig = [
       },
       {
         title: "52 Week High",
-        id: 48,
+        id: 49,
         url: "https://www.indmoney.com/stocks/category/52-week-high",
       },
       {
         title: "52 Week Low",
-        id: 48,
+        id: 50,
         url: "https://www.indmoney.com/stocks/category/52-week-low",
       },
       {
         title: "Top Gainers",
-        id: 48,
+        id: 51,
         url: "https://www.indmoney.com/stocks/category/top-gainers",
       },
       {
         title: "Top Losers",
-        id: 48,
+        id: 52,
         url: "https://www.indmoney.com/stocks/category/top-losers",
       },
       {
         title: "Online Buyers",
-        id: 48,
+        id: 53,
         url: "https://www.indmoney.com/stocks/category/only-buyers",
       },
       {
         title: "Online Sellers",
-        id: 48,
+        id: 54,
         url: "https://www.indmoney.com/stocks/category/only-sellers",
       },
     ],
@@ -46,37 +46,37 @@ export const marketConfig = [
     items: [
       {
         title: "Stocks to buy today",
-        id: 48,
+        id: 55,
         url: "https://www.indmoney.com/stocks/category/buy-stockss",
       },
       {
         title: "Penny Stocks",
-        id: 48,
+        id: 56,
         url: "https://www.indmoney.com/stocks/category/penny-stocks",
       },
       {
         title: "Multi-bagger Stocks",
-        id: 48,
+        id: 57,
         url: "https://www.indmoney.com/stocks/category/multibagger-stocks",
       },
       {
         title: "Nifty 50 Stocks",
-        id: 48,
+        id: 58,
         url: "https://www.indmoney.com/stocks/category/nifty-50-stocks",
       },
       {
         title: "Large Cap Stocks",
-        id: 48,
+        id: 59,
         url: "https://www.indmoney.com/stocks/category/large-cap-stocks",
       },
       {
         title: "Mid Cap Stocks",
-        id: 48,
+        id: 60,
         url: "https://www.indmoney.com/stocks/category/mid-cap-stocks",
       },
       {
         title: "Small Cap Stocks",
-        id: 48,
+        id: 61,
         url: "https://www.indmoney.com/stocks/category/small-cap-stocks",
       },
     ],
@@ -87,37 +87,37 @@ export const marketConfig = [
     items: [
       {
         title: "BSE Sensex",
-        id: 48,
+        id: 62,
         url: "https://www.indmoney.com/indices/sensex",
       },
       {
         title: "Nifty 50",
-        id: 48,
+        id: 63,
         url: "https://www.indmoney.com/indices/nifty-50",
       },
       {
         title: "Nifty Midcap 100",
-        id: 48,
+        id: 64,
         url: "https://www.indmoney.com/indices/nifty-midcap-100",
       },
       {
         title: "Bank Nifty",
-        id: 48,
+        id: 65,
         url: "https://www.indmoney.com/indices/bank-nifty",
       },
       {
         title: "FINNIFTY",
-        id: 48,
+        id: 66,
         url: "https://www.indmoney.com/indices/nifty-financial",
       },
       {
         title: "Nifty 500",
-        id: 48,
+        id: 67,
         url: "https://www.indmoney.com/indices/nifty-500",
       },
       {
         title: "Nifty IT",
-        id: 48,
+        id: 68,
         url: "https://www.indmoney.com/indices/nifty-it",
       },
     ],
@@ -128,37 +128,37 @@ export const marketConfig = [
     items: [
       {
         title: "Gift Nifty",
-        id: 48,
+        id: 69,
         url: "https://www.indmoney.com/indices/gift-nifty",
       },
       {
         title: "Dow Jones Industrial Average",
-        id: 48,
+        id: 70,
         url: "https://www.indmoney.com/indices/dow-jones-industrial-average",
       },
       {
         title: "S&P 500",
-        id: 48,
+        id: 71,
         url: "https://www.indmoney.com/indices/s-p-500",
       },
       {
         title: "Nasdaq 100",
-        id: 48,
+        id: 72,
         url: "https://www.indmoney.com/indices/nasdaq-100",
       },
       {
         title: "Russell 2000 Index",
-        id: 48,
+        id: 73,
         url: "https://www.indmoney.com/indices/russell-2000-index",
       },
       {
         title: "Dow Jones Market",
-        id: 48,
+        id: 74,
         url: "https://www.indmoney.com/indices/dow-jones-market",
       },
       {
         title: "View All Indices",
-        id: 48,
+        id: 75,
         url: "https://www.indmoney.com/indices",
       },
     ],
