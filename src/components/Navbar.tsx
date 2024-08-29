@@ -41,12 +41,12 @@ const Navbar = (props: Props) => {
           <span>
             {isSidebarOpen ? (
               <MdClose
-                className="size-6 text-gray-500"
+                className="size-6 cursor-pointer text-gray-500"
                 onClick={handleSidebar}
               />
             ) : (
               <HiMenuAlt3
-                className="size-6 text-gray-700"
+                className="size-6 cursor-pointer text-gray-700"
                 onClick={handleSidebar}
               />
             )}
