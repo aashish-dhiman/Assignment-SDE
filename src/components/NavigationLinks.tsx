@@ -22,7 +22,7 @@ const NavigationLinks = ({
             toggleSection={toggleSection}
             section={section}
             openSections={openSections}
-            customStyles="bg-white"
+            customStyles="bg-white border-b-[1px]"
           />
 
           {/* Render items if the section is open */}
@@ -37,7 +37,7 @@ const NavigationLinks = ({
                         toggleSection={toggleSection}
                         section={item}
                         openSections={openSections}
-                        customStyles="bg-gray-100"
+                        customStyles="bg-gray-100 border-b-[1px]"
                       />
 
                       {/* Render nested items if the item section is open */}
@@ -50,7 +50,7 @@ const NavigationLinks = ({
                               toggleSection={toggleSection}
                               section={subItem}
                               openSections={openSections}
-                              customStyles="bg-white"
+                              customStyles="bg-white "
                             />
                           ))}
                         </div>
@@ -62,7 +62,7 @@ const NavigationLinks = ({
                       toggleSection={toggleSection}
                       section={item}
                       openSections={openSections}
-                      customStyles="bg-gray-100"
+                      customStyles="bg-gray-100 border-b-[1px]"
                     />
                   )}
                 </div>

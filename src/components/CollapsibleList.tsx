@@ -21,7 +21,7 @@ const CollapsibleList = ({
       // Toggle the section when clicked
       onClick={() => toggleSection(section?.id)}
       className={cn(
-        "flex cursor-pointer items-center justify-between border-b-[1px] p-5",
+        "flex cursor-pointer items-center justify-between p-5",
         customStyles,
       )}
     >
