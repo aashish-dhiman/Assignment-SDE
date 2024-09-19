@@ -26,49 +26,48 @@ const NavigationLinks = ({
           />
 
           {/* Render items if the section is open */}
-          {openSections[section.id] && (
-            <div className="">
-              {section?.items?.map((item, itemIndex) => (
-                <div key={itemIndex}>
-                  {"items" in item && item?.items ? (
-                    <>
-                      {/* HEADING LEVEL 2: Nested Collapsible Section */}
-                      <CollapsibleList
-                        toggleSection={toggleSection}
-                        section={item}
-                        openSections={openSections}
-                        customStyles="bg-gray-100 border-b-[1px]"
-                      />
 
-                      {/* Render nested items if the item section is open */}
-                      {openSections[item?.id] && (
-                        <div>
-                          {/* HEADING LEVEL 3: Sub-items (URLs) */}
-                          {item?.items?.map((subItem, subItemIndex) => (
-                            <CollapsibleList
-                              key={subItemIndex}
-                              toggleSection={toggleSection}
-                              section={subItem}
-                              openSections={openSections}
-                              customStyles="bg-white "
-                            />
-                          ))}
-                        </div>
-                      )}
-                    </>
-                  ) : (
-                    // Render CollapsibleList as URL link if the item doesn't have nested items
+          <div className={`${openSections[section.id] ? "block" : "hidden"}`}>
+            {section?.items?.map((item, itemIndex) => (
+              <div key={itemIndex}>
+                {"items" in item && item?.items ? (
+                  <>
+                    {/* HEADING LEVEL 2: Nested Collapsible Section */}
                     <CollapsibleList
                       toggleSection={toggleSection}
                       section={item}
                       openSections={openSections}
                       customStyles="bg-gray-100 border-b-[1px]"
                     />
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
+
+                    {/* Render nested items if the item section is open */}
+                    <div
+                      className={`${openSections[item?.id] ? "block" : "hidden"}`}
+                    >
+                      {/* HEADING LEVEL 3: Sub-items (URLs) */}
+                      {item?.items?.map((subItem, subItemIndex) => (
+                        <CollapsibleList
+                          key={subItemIndex}
+                          toggleSection={toggleSection}
+                          section={subItem}
+                          openSections={openSections}
+                          customStyles="bg-white "
+                        />
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  // Render CollapsibleList as URL link if the item doesn't have nested items
+                  <CollapsibleList
+                    toggleSection={toggleSection}
+                    section={item}
+                    openSections={openSections}
+                    customStyles="bg-gray-100 border-b-[1px]"
+                  />
+                )}
+              </div>
+            ))}
+          </div>
         </React.Fragment>
       ))}
     </div>
